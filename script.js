@@ -11,6 +11,19 @@ var activeId = "img1"; // active preview, used to address array of items
 
 initPreview();
 initButtons();
+initText();
+
+//---------------------------------------------------------
+// init Text information
+function initText() {
+    var i = 0;
+    while (activeId != items[i].id) {
+        i++;
+    }
+    document.getElementById("text").innerHTML = "Precious stone: <strong>"
+        + items[i].name + "</strong>. Price: <strong>"
+        + items[i].price + "</strong>";
+}
 
 //---------------------------------------------------------
 // set buttons EventListeners
@@ -59,6 +72,8 @@ function changeBigPicture(eventObj) {
     //--- changing the preview ---
     document.getElementsByClassName("active")[0].className = "preview"; //find and clear class "active"
     eventObj.target.className += " active"; // add class "active" for a new preview
+
+    initText(); // renew info text
 
 //---------------------------------------------------------
 

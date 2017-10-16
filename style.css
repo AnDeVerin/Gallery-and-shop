@@ -43,10 +43,12 @@ body {
   .arrow:hover {
     opacity: 0.5; }
 
-.gallery {
+.gallery,
+.info {
   margin: 2em auto;
   width: 40em;
   display: flex;
+  align-items: center;
   justify-content: space-between; }
 
 .preview {
@@ -64,5 +66,28 @@ body {
 .active {
   opacity: 1;
   box-shadow: 0 0 0.3em #767b81; }
+
+.info {
+  border: solid 1px #dbe2e8;
+  border-radius: 0.5em;
+  padding: 1em;
+  box-sizing: border-box;
+  background: #ffffff;
+  box-shadow: 0 0 0.3em #dbe2e8; }
+
+.info_link {
+  display: block;
+  height: 1.2em;
+  padding: 0.6em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  background: #ffd5b4;
+  border-radius: 0.5em;
+  line-height: 1.2em;
+  color: #3f4349; }
+  .info_link:hover {
+    background: #ff8577; }
 
 /*# sourceMappingURL=style.css.map */
