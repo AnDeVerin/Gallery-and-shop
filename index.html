@@ -22,8 +22,27 @@
         </div>
         <div class="info">
             <span id="text" class="text"></span>
-            <a href="#" class="info_link">Add to cart</a>
+            <a id="buy" href="#" onclick="addToCart()" class="buy_link">Add to cart</a>
         </div>
+        <div class="info">
+            <details>
+            <summary>&#128722;
+                <div class="cart">
+                    <span class="cart_items">
+                        Items: <strong><span id="items">0</span></strong>
+                    </span>
+                    <span class="cart_cost">
+                        Total cost: <strong><span id="totalCost">0</span></strong>
+                    </span>
+                    <span class="cart_clear">
+                        <a id="clear" href="#" onclick="clearCart()" class="clear_btn">&#10060;</a>
+                    </span>
+                </div>
+            </summary>
+            <p id="cart"></p>
+            </details>
+        </div>
+
     </div>
     <script src="script.js"></script>
 </body>

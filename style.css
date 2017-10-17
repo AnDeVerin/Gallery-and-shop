@@ -75,7 +75,7 @@ body {
   background: #ffffff;
   box-shadow: 0 0 0.3em #dbe2e8; }
 
-.info_link {
+.buy_link {
   display: block;
   height: 1.2em;
   padding: 0.6em;
@@ -83,11 +83,26 @@ body {
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  background: #ffd5b4;
+  background: #ffebb7;
   border-radius: 0.5em;
   line-height: 1.2em;
   color: #3f4349; }
-  .info_link:hover {
-    background: #ff8577; }
+  .buy_link:hover {
+    background: #92ff96; }
+
+summary {
+  outline: none; }
+
+.cart {
+  display: inline-block; }
+  .cart_items, .cart_cost, .cart_clear {
+    display: inline-block;
+    width: 11em;
+    text-align: right; }
+
+.clear_btn {
+  text-decoration: none; }
+  .clear_btn:hover {
+    background: #FFB3AA; }
 
 /*# sourceMappingURL=style.css.map */
