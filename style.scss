@@ -97,12 +97,17 @@ body {
   border-radius: 0.5em;
   line-height: 1.2em;
   color: #3f4349;
+  box-shadow: 1px 1px 2px #767b81;
   &:hover {
     background: darken(#c5ffc7, 10);
+  }
+  &:active {
+    box-shadow: none;
   }
 }
 summary {
   outline: none;
+  cursor: pointer;
 }
 .cart {
   display: inline-block;

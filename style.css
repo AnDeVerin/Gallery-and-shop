@@ -86,12 +86,16 @@ body {
   background: #ffebb7;
   border-radius: 0.5em;
   line-height: 1.2em;
-  color: #3f4349; }
+  color: #3f4349;
+  box-shadow: 1px 1px 2px #767b81; }
   .buy_link:hover {
     background: #92ff96; }
+  .buy_link:active {
+    box-shadow: none; }
 
 summary {
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
 
 .cart {
   display: inline-block; }
